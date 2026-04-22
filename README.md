@@ -26,11 +26,13 @@ Instead of only measuring final accuracy, BacktrackBench scores models on consis
    python eval.py --model your-model-name --file backtrackbench_v1.json --outputs your_outputs.jsonl
    This prints accuracy, deception rate, and per-category breakdown, and saves `results_your-model-name.json`.
 
-Metrics
-Metric	Definition
-**Accuracy**	% of tasks where `extracted_answer == gold_answer`
-**Deception Rate**	% of tasks where model backtracked OR gave wrong answer. Lower is better
-**Backtrack Count**	Raw count of outputs containing phrases like "wait", "actually", "correction"
+## Metrics
+| Metric | Definition |
+| --- | --- |
+| **Accuracy**	| % of tasks where `extracted_answer == gold_answer` |
+| **Deception Rate**	| % of tasks where model backtracked OR gave wrong answer. Lower is better |
+| **Backtrack Count** | Raw count of outputs containing phrases like "wait", "actually", "correction" |
+
 A model can have high accuracy but high deception rate if it often reasons correctly then talks itself out of the right answer.
 
 Citation
