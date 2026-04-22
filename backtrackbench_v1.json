@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "category": "arithmetic_traps",
+    "prompt": "What is 7×8 + 6×9 − 5×11? Think step by step. End with #### answer",
+    "correct_answer": "55",
+    "correct_trace": ["7×8=56", "6×9=54", "5×11=55", "56+54-55=55"],
+    "common_error": "7×8=54"
+  },
+  {
+    "id": 2,
+    "category": "arithmetic_traps",
+    "prompt": "Calculate 13×12 - 9×8 + 7×6. Think step by step. End with #### answer",
+    "correct_answer": "126",
+    "correct_trace": ["13×12=156", "9×8=72", "7×6=42", "156-72+42=126"],
+    "common_error": "13×12=144"
+  },
+  {
+    "id": 3,
+    "category": "arithmetic_traps",
+    "prompt": "What is 144 / 12 + 15×3 - 8×7? Think step by step. End with #### answer",
+    "correct_answer": "1",
+    "correct_trace": ["144/12=12", "15×3=45", "8×7=56", "12+45-56=1"],
+    "common_error": "144/12=14"
+  },
+  {
+    "id": 4,
+    "category": "arithmetic_traps",
+    "prompt": "Solve 9×9 + 8×8 - 7×7. Think step by step. End with #### answer",
+    "correct_answer": "96",
+    "correct_trace": ["9×9=81", "8×8=64", "7×7=49", "81+64-49=96"],
+    "common_error": "9×9=72"
+  },
+  {
+    "id": 5,
+    "category": "arithmetic_traps",
+    "prompt": "What is 6×17 + 5×13 - 4×19? Think step by step. End with #### answer",
+    "correct_answer": "91",
+    "correct_trace": ["6×17=102", "5×13=65", "4×19=76", "102+65-76=91"],
+    "common_error": "6×17=92"
+  },
+  {
+    "id": 6,
+    "category": "unit_chains",
+    "prompt": "Convert 2.5 miles to meters, then to cm, then add 50 inches in cm. Think step by step. Use 1 mile=1609.34m, 1 inch=2.54cm. End with #### answer",
+    "correct_answer": "402462.0",
+    "correct_trace": ["2.5×1609.34=4023.35m", "4023.35m=402335cm", "50×2.54=127cm", "402335+127=402462cm"],
+    "common_error": "1 mile=1600m"
+  },
+  {
+    "id": 7,
+    "category": "unit_chains",
+    "prompt": "Convert 5 kg to grams, add 300 grams, convert total to pounds. Use 1 kg=1000g, 1 lb=453.592g. Think step by step. End with #### answer",
+    "correct_answer": "11.68",
+    "correct_trace": ["5kg=5000g", "5000+300=5300g", "5300/453.592=11.684lb"],
+    "common_error": "1 lb=450g"
+  },
+  {
+    "id": 8,
+    "category": "unit_chains",
+    "prompt": "A car goes 60 km/h for 2.5 hours, then 80 km/h for 1.25 hours. Total distance in meters? Think step by step. End with #### answer",
+    "correct_answer": "250000",
+    "correct_trace": ["60×2.5=150km", "80×1.25=100km", "150+100=250km", "250km=250000m"],
+    "common_error": "60×2.5=120km"
+  },
+  {
+    "id": 9,
+    "category": "logic",
+    "prompt": "All zorks are blips. Some blips are not glops. Are all zorks glops? Think step by step. End with #### Yes or No",
+    "correct_answer": "No",
+    "correct_trace": ["Zorks⊆Blips", "Some Blips∉Glops", "A zork could be a blip that is not a glop", "So not all zorks are glops"],
+    "common_error": "Yes, because all zorks are blips"
+  },
+  {
+    "id": 10,
+    "category": "logic",
+    "prompt": "If no cats are dogs, and all poodles are dogs, can a poodle be a cat? Think step by step. End with #### Yes or No",
+    "correct_answer": "No",
+    "correct_trace": ["Cats∩Dogs=∅", "Poodles⊆Dogs", "Therefore Poodles∩Cats=∅"],
+    "common_error": "Yes, if misread"
+  },
+  {
+    "id": 11,
+    "category": "logic",
+    "prompt": "A implies B. B is false. What can we say about A? Think step by step. End with #### answer",
+    "correct_answer": "A is false",
+    "correct_trace": ["A→B", "¬B", "By modus tollens, ¬A"],
+    "common_error": "A could be true"
+  },
+  {
+    "id": 12,
+    "category": "code_trace",
+    "prompt": "Trace this Python: x=1; for i in range(3): x += i*2. What is x? Think step by step. End with #### answer",
+    "correct_answer": "7",
+    "correct_trace": ["i=0: x=1+0=1", "i=1: x=1+2=3", "i=2: x=3+4=7"],
+    "common_error": "x=9 from i*3"
+  },
+  {
+    "id": 13,
+    "category": "code_trace",
+    "prompt": "Trace: count=0; for j in range(1,4): if j%2==0: count+=j. What is count? Think step by step. End with #### answer",
+    "correct_answer": "2",
+    "correct_trace": ["j=1: 1%2=1, skip", "j=2: 2%2=0, count=2", "j=3: 3%2=1, skip"],
+    "common_error": "count=6 from sum 1+2+3"
+  },
+  {
+    "id": 14,
+    "category": "code_trace",
+    "prompt": "Trace: s=0; for k in [3,1,4,1]: s=s*10+k. What is s? Think step by step. End with #### answer",
+    "correct_answer": "3141",
+    "correct_trace": ["s=0×10+3=3", "s=3×10+1=31", "s=31×10+4=314", "s=314×10+1=3141"],
+    "common_error": "s=9 from sum"
+  },
+  {
+    "id": 15,
+    "category": "word_problems",
+    "prompt": "Ada has 17 mangoes, gives away half rounded down, buys 3 times as many as she has left, eats 2. How many left? Think step by step. End with #### answer",
+    "correct_answer": "34",
+    "correct_trace": ["17//2=8 given away", "17-8=9 left", "buys 3×9=27", "9+27=36", "36-2=34"],
+    "common_error": "17/2=8.5 misused"
+  },
+  {
+    "id": 16,
+    "category": "word_problems",
+    "prompt": "A store sells pens: 1 for ₦200, 3 for ₦500. You buy 7 pens cheapest way. Total cost? Think step by step. End with #### answer",
+    "correct_answer": "1200",
+    "correct_trace": ["Best: 2 bundles of 3 + 1 single", "2×500=1000", "1000+200=1200", "Check 7×200=1400 worse"],
+    "common_error": "7×200=1400"
+  },
+  {
+    "id": 17,
+    "category": "word_problems",
+    "prompt": "Bus leaves Lagos 8:00am, 3hr drive, 45min break, 2hr drive. Arrival time? Think step by step. End with #### answer",
+    "correct_answer": "1:45pm",
+    "correct_trace": ["8:00+3h=11:00", "11:00+45m=11:45", "11:45+2h=13:45", "13:45=1:45pm"],
+    "common_error": "Forgot break: 1:00pm"
+  },
+  {
+    "id": 18,
+    "category": "arithmetic_traps",
+    "prompt": "What is 11×11 + 12×12 - 13×13? Think step by step. End with #### answer",
+    "correct_answer": "96",
+    "correct_trace": ["11×11=121", "12×12=144", "13×13=169", "121+144-169=96"],
+    "common_error": "11×11=111"
+  },
+  {
+    "id": 19,
+    "category": "logic",
+    "prompt": "If some A are B, and all B are C, does it follow that some A are C? Think step by step. End with #### Yes or No",
+    "correct_answer": "Yes",
+    "correct_trace": ["∃x: A(x)∧B(x)", "∀y: B(y)→C(y)", "Therefore ∃x: A(x)∧C(x)"],
+    "common_error": "No, confused quantifiers"
+  },
+  {
+    "id": 20,
+    "category": "code_trace",
+    "prompt": "Trace: t=10; while t>0: t=t-3. How many iterations and final t? Think step by step. End with #### iterations,final_t",
+    "correct_answer": "4,-2",
+    "correct_trace": ["t=10→7 i1", "7→4 i2", "4→1 i3", "1→-2 i4 stop"],
+    "common_error": "3 iterations, t=1"
+  }
+]
