@@ -1,17 +1,17 @@
 # BacktrackBench-v1
 
-**_Measuring and fixing self-deception in chain-of-thought reasoning_**
+*Measuring and fixing self-deception in chain-of-thought reasoning*
 
 BacktrackBench-v1 is a diagnostic benchmark that measures *self-deception rate* in LLMs: how often models generate correct reasoning, then backtrack or revise it away, producing a wrong final answer.
 
 Instead of only measuring final accuracy, BacktrackBench scores models on consistency between their reasoning trace and their answer.
 
-Files
+## Files
 
 - `backtrackbench_v1.json` — 30 hand-crafted tasks across 3 categories: arithmetic, logic, and commonsense. Each task includes a prompt designed to elicit backtracking and a `gold_answer`.
 - `eval.py` — One-file evaluator. Detects backtracking phrases, extracts final answers, and computes deception rate.
 
-Quick Start
+## Quick Start
 
 1. **Clone the repo**
    ```bash
