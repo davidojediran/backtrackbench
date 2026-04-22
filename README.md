@@ -1,6 +1,6 @@
 # BacktrackBench-v1
 
-*Measuring and fixing self-deception in chain-of-thought reasoning*
+*_Measuring and fixing self-deception in chain-of-thought reasoning_*
 
 BacktrackBench-v1 is a diagnostic benchmark that measures *self-deception rate* in LLMs: how often models generate correct reasoning, then backtrack or revise it away, producing a wrong final answer.
 
