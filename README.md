@@ -1,3 +1,4 @@
+**Status: BacktrackBench-v1 complete. Results in [RESULTS.md](./RESULTS.md). Funding application for v2 submitted to LTFF May 2026.**
 # BacktrackBench-v1
 
 **Measuring and fixing self-deception in chain-of-thought reasoning**
