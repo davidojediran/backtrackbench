@@ -1,4 +1,4 @@
-**Status: BacktrackBench-v1 complete. Results in [RESULTS.md](./RESULTS.md). Funding application for v2 submitted to LTFF May 2026.**
+**Status: BacktrackBench-v1 complete. Results in [RESULTS.md](./RESULTS.md). Funding application for v2 submitted to LTFF April 2026.**
 ## What is BacktrackBench?
 
 BacktrackBench-v1 is, to our knowledge, the first public benchmark to measure LLM self-deception rate — the tendency for a model to maintain a false belief after stakes are raised, rather than backtracking to truth.
